@@ -17,3 +17,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
+Route::get('/event/{id}', 'EventController@show');
+
+Route::post('/event', 'EventController@subscribeUser');
+Route::delete('/event', 'EventController@delete');

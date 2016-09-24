@@ -1,6 +1,9 @@
 body {
 }
 
+p{
+    text-align: justify;
+}
 .home .date-time {
     color: #9E9E9E;
 }
@@ -58,7 +61,7 @@ body {
 }
 
 .hero {
-    background: url('../img/volunteer.jpg');
+    background: url('/images/volunteer.png');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

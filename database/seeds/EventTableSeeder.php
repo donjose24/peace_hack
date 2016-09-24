@@ -14,13 +14,15 @@ class EventTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('events')->truncate();
+
         $faker = Faker\Factory::create();
 
         $event = new Event();
         $event->title = '#CancerAngels2016';
         $event->short_description = 'Join us for a day of fun and party with the young cancer patients
                                     from the Philippine Cancer Society. ';
-        $event->description = $faker->paragraph(3);
+        $event->description = $faker->paragraph(30);
         $event->picture = 'volunteer.png';
         $event->max = 10;
         $event->current = 0;
@@ -29,6 +31,7 @@ class EventTableSeeder extends Seeder
         $event->organizing_body_contact = $faker->phoneNumber();
         $event->start_date = $faker->dateTimeBetween('now', '+ 5 days');
         $event->end_date = $faker->dateTimeBetween('+ 5 days', '+ 15 days');
+        $event->points = 200;
         $event->save();
 
         $event = new Event();
@@ -42,9 +45,10 @@ class EventTableSeeder extends Seeder
         $event->organizing_body = 'Brgy Tatalon Sanguniang Kabataan HWF';
         $event->organizing_body_email = $faker->email();
         $event->organizing_body_contact = $faker->phoneNumber();
-        $event->description = $faker->paragraph(3);
+        $event->description = $faker->paragraph(30);
         $event->start_date = $faker->dateTimeBetween('now', '+ 5 days');
         $event->end_date = $faker->dateTimeBetween('+ 5 days', '+ 15 days');
+        $event->points = 300;
         $event->save();
 
         $event = new Event();
@@ -59,10 +63,11 @@ class EventTableSeeder extends Seeder
         $event->current = 0;
         $event->organizing_body = 'Children\'s Foundation of the Philippines';
         $event->organizing_body_email = $faker->email();
-        $event->description = $faker->paragraph(3);
+        $event->description = $faker->paragraph(30);
         $event->organizing_body_contact = $faker->phoneNumber();
         $event->start_date = $faker->dateTimeBetween('now', '+ 5 days');
         $event->end_date = $faker->dateTimeBetween('+ 5 days', '+ 15 days');
+        $event->points = 400;
         $event->save();
 
     }
