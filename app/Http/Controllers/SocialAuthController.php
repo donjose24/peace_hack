@@ -19,16 +19,22 @@ class SocialAuthController extends Controller
     {
         $response = Socialite::driver('facebook')->user();
 
-        $user = new User();
-        $user->email = $response->email;
-        $user->name = $response->name;
-        $user->facebook_token = $response->token;
-        $user->facebook_id = $response->id;
-        $user->avatar_url = $response->avatar;
-        $user->password = bcrypt('test'); //haha dont do this. for hacking pruposes lang~
-        $user->address = 'Valenzuela City'; //this too
+        $count = User::where('facebook_id', $response->id)->count();
+        if ($count == 0) {
+            $user = new User();
+            $user->email = $response->email;
+            $user->name = $response->name;
+            $user->facebook_token = $response->token;
+            $user->facebook_id = $response->id;
+            $user->avatar_url = $response->avatar;
+            $user->password = bcrypt('test'); //haha dont do this. for hacking pruposes lang~
+            $user->address = 'Valenzuela City'; //this too
 
-        $user->save();
+            $user->save();
+        } else {
+            $user = User::where('facebook_id', $response->id)->first();
+        }
+
 
         auth()->login($user);
 
