@@ -6,16 +6,17 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Socialite;
+use URL;
 use App\User;
 
 class SocialAuthController extends Controller
 {
-    public function redirect()
+    public function redirect(Request $request)
     {
         return Socialite::driver('facebook')->redirect();
     }
 
-    public function callback()
+    public function callback(Request $request)
     {
         $response = Socialite::driver('facebook')->user();
 
@@ -36,6 +37,6 @@ class SocialAuthController extends Controller
         }
         auth()->login($user);
 
-        return redirect()->to('/');
+        return redirect($request->session()->get('lastUrl'));
     }
 }

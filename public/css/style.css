@@ -75,7 +75,7 @@ body {
 }
 
 .hero {
-    background: url('/images/volunteer.png');
+    background: url('/images/volunteer.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

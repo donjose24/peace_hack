@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Event;
 use Auth;
@@ -23,15 +22,14 @@ class EventController extends Controller
 
     public function show($id)
     {
+        $event = Event::findOrFail($id);
+        $users = $event->users()->get();
         if (Auth::check()) {
-            $event = Event::findOrFail($id);
-            $users = $event->users()->get();
             $user = Auth::user();
             $isRegistered = $event->users()->where('user_id', $user->id)->count();
             return view('events.show', compact('event', 'users', 'isRegistered'));
-        } else {
-            return redirect('login');
         }
+        return view('events.show', compact('event', 'users'));
 
     }
 

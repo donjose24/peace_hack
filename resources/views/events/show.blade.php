@@ -42,19 +42,23 @@
                         <div class="card">
                             <div class="card-block">
                                 <h5 class="card-title">Join the cause</h5>
-                                @if($isRegistered == 0)
-                                    {{Form::open(['url' => 'event', 'method' => 'POST'])}}
+                                @if (Auth::check())
+                                    @if($isRegistered == 0)
+                                        {{Form::open(['url' => 'event', 'method' => 'POST'])}}
                                         {{Form::hidden('userId', Auth::user()->id)}}
                                         {{Form::hidden('eventId', $event->id)}}
                                         {{Form::submit('Register', ['class' => 'btn btn-success btn-lg btn-block'])}}
-                                    {{Form::close()}}
-                                @else 
-                                     {{Form::open(['url' => 'event', 'method' => 'DELETE'])}}
+                                        {{Form::close()}}
+                                    @else 
+                                        {{Form::open(['url' => 'event', 'method' => 'DELETE'])}}
                                         {{Form::hidden('userId', Auth::user()->id)}}
                                         {{Form::hidden('eventId', $event->id)}}
                                         {{Form::hidden('_method', 'DELETE')}}
                                         {{Form::submit('Cancel', ['class' => 'btn btn-danger btn-lg btn-block'])}}
-                                    {{Form::close()}}                                   
+                                        {{Form::close()}}                                   
+                                    @endif
+                                @else
+                                    <h6>You must login to continue</h6>
                                 @endif
                             </div>
                         </div>
