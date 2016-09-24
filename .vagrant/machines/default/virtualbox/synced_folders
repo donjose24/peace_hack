@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/peace":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/peace","hostpath":"/Users/jramos/workspace/hackathons/peace","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/jramos/workspace/hackathons/peace","disabled":false,"__vagrantfile":true}}}
