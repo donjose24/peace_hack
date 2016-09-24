@@ -34,10 +34,8 @@ class SocialAuthController extends Controller
         } else {
             $user = User::where('facebook_id', $response->id)->first();
         }
-
-
         auth()->login($user);
 
-        return redirect()->to('/home');
+        return redirect()->to('/');
     }
 }

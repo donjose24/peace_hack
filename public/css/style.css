@@ -1,0 +1,84 @@
+body {
+}
+
+.home .date-time {
+    color: #9E9E9E;
+}
+
+.home .volt-points {
+    padding: 1rem;
+    background: #FFEE58;
+}
+
+.home .card-img-top {
+    max-width: 348px;
+    border-radius: 0;
+}
+
+.home .card-title {
+    max-height: 26px;
+}
+.home .card-text {
+    max-height: 72px;
+    text-overflow: ellipsis;
+}
+
+.login .btn-primary {
+    background: #3b5998;
+    border: none;
+}
+
+.login .card {
+    margin-top: 40%;
+}
+
+.login .logo {
+    float: left;
+    padding-right: 1.35rem;
+}
+
+.login .card-title {
+    margin-top: 5%;
+}
+
+.login .btn {
+    font-family: "Tahoma", sans-serif;
+}
+
+.login .btn:hover {
+    background: #293E6B;
+}
+
+.fa-facebook {
+    padding-right: 0.7rem;
+}
+
+.details .date {
+    margin-bottom: 0.3rem;
+}
+
+.hero {
+    background: url('../img/volunteer.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 8rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(0,0,0,0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.hero .event-title {
+    position: relative;
+    z-index: 1100;
+}
