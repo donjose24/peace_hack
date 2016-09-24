@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use Socialite;
+use App\User;
+
+class SocialAuthController extends Controller
+{
+    public function redirect()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    public function callback()
+    {
+        $response = Socialite::driver('facebook')->user();
+
+        $user = new User();
+        $user->email = $response->email;
+        $user->name = $response->name;
+        $user->facebook_token = $response->token;
+        $user->facebook_id = $response->id;
+        $user->avatar_url = $response->avatar;
+        $user->password = bcrypt('test'); //haha dont do this. for hacking pruposes lang~
+        $user->address = 'Valenzuela City'; //this too
+
+        $user->save();
+
+        auth()->login($user);
+
+        return redirect()->to('/home');
+    }
+}
