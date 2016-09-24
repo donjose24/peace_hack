@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        @yield('head')
 
         <meta charset="UTF-8">
         <title>Volteer</title>
@@ -35,14 +36,17 @@ window.Laravel = <?php echo json_encode([
             </ul>
             <form class="form-inline pull-xs-right">
                 @if (Auth::check())
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/profile">{{Auth::user()->name}}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/logout"> Logout </a>
-                        </li>
-                    </ul>
+                    <form class="form-inline pull-xs-right profile-link">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="{{Auth::user()->avatar_url}}" alt=""> {{Auth::user()->name}}
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/profile"> <i class="fa fa-user"></i> My Profile</a>
+                                <a class="dropdown-item" href="/logout"> <i class="fa fa-sign-out"></i> Logout</a>
+                            </div>
+                        </div>
+                    </form>
                 @else
                     <ul class="nav navbar-nav">
                         <li class="nav-item active">

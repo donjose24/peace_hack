@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
     <div class="container details">
         <br>
@@ -52,7 +53,7 @@
                                         {{Form::hidden('userId', Auth::user()->id)}}
                                         {{Form::hidden('eventId', $event->id)}}
                                         {{Form::hidden('_method', 'DELETE')}}
-                                        {{Form::submit('Remove', ['class' => 'btn btn-danger btn-lg btn-block'])}}
+                                        {{Form::submit('Cancel', ['class' => 'btn btn-danger btn-lg btn-block'])}}
                                     {{Form::close()}}                                   
                                 @endif
                             </div>

@@ -18,16 +18,21 @@ class EventController extends Controller
         $event = Event::findOrFail($eventId);
         $event->users()->attach($userId);
 
-        return redirect()->back();
+        return view('events.confirmation', compact('event'));
     }
 
     public function show($id)
     {
-        $event = Event::findOrFail($id);
-        $users = $event->users()->get();
-        $user = Auth::user();
-        $isRegistered = $event->users()->where('user_id', $user->id)->count();
-        return view('events.show', compact('event', 'users', 'isRegistered'));
+        if (Auth::check()) {
+            $event = Event::findOrFail($id);
+            $users = $event->users()->get();
+            $user = Auth::user();
+            $isRegistered = $event->users()->where('user_id', $user->id)->count();
+            return view('events.show', compact('event', 'users', 'isRegistered'));
+        } else {
+            return redirect('login');
+        }
+
     }
 
     public function delete(Request $request)
@@ -38,6 +43,6 @@ class EventController extends Controller
         $event = Event::findOrFail($eventId);
         $event->users()->detach($userId);
 
-        return redirect()->back();
+        return view('events.cancel', compact('event'));
     }
 }

@@ -1,9 +1,23 @@
-body {
-}
-
 p{
     text-align: justify;
 }
+
+body {
+    background: #f8f8fa;
+}
+
+.bg-faded {
+    background-color: #fff;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
 .home .date-time {
     color: #9E9E9E;
 }
@@ -26,7 +40,7 @@ p{
     text-overflow: ellipsis;
 }
 
-.login .btn-primary {
+.btn-fb {
     background: #3b5998;
     border: none;
 }
@@ -44,11 +58,11 @@ p{
     margin-top: 5%;
 }
 
-.login .btn {
+.btn-fb {
     font-family: "Tahoma", sans-serif;
 }
 
-.login .btn:hover {
+.btn-fb:hover {
     background: #293E6B;
 }
 
@@ -71,6 +85,13 @@ p{
     position: relative;
 }
 
+.redeem-bg {
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 .hero .overlay {
     background: rgba(0,0,0,0.65);
     position: absolute;
@@ -84,4 +105,39 @@ p{
 .hero .event-title {
     position: relative;
     z-index: 1100;
+}
+
+.confirmation .card-block {
+    text-align: center;
+}
+
+.confirmation .back {
+    padding: .5rem 1rem;
+
+}
+
+.confirmation .back:hover {
+    text-decoration: none;
+}
+.profile-link a:hover {
+    text-decoration: none;
+}
+
+#dropdownMenuButton  {
+    padding: 0;
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+#dropdownMenuButton:focus {
+    outline: none;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.cancel-confirmation .card{
+    text-align: center;
 }
