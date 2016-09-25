@@ -17,7 +17,8 @@ Route::get('/redirect', 'SocialAuthController@redirect');
 Route::get('/callback', 'SocialAuthController@callback');
 Route::get('/event/{id}', 'EventController@show');
 Route::get('/login', 'Auth\LoginController@login');
-Route::get('/rewards', 'RewardController@index');
+Route::get('/reward', 'RewardController@index');
+Route::get('/reward/{id}', 'RewardController@show');
 
 Route::post('/event', 'EventController@subscribeUser');
 Route::delete('/event', 'EventController@delete');

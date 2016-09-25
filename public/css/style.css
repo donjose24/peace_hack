@@ -86,7 +86,7 @@ body {
 }
 
 .redeem-bg {
-    background: url('../img/bg.jpg');
+    background: url('/images/bg.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

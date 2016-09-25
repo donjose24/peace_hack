@@ -30,7 +30,7 @@ class RewardTableSeeder extends Seeder
         $reward = new Reward();
 
         $reward->title = "One medium blue magic stuff toy";
-        $reward->short_description = "Get one blue magic stuff toy of your choice. Must be less than 1000 pesos";
+        $reward->short_description = "Get one blue magic stuff toy of your choice. Must be less than 1000 pesos, limited to only one toy";
         $reward->description = $faker->paragraph(30);
         $reward->instructions = $faker->paragraph(10);
         $reward->cost = $faker->numberBetween(2000, 20000);
@@ -41,7 +41,7 @@ class RewardTableSeeder extends Seeder
         $reward = new Reward();
 
         $reward->title = "Free 1-night stay at Solaire Resort and Casino";
-        $reward->short_description = "Stay with your friends in Solaire! for 3 pax. Limited time only!";
+        $reward->short_description = "Stay with your friends in Solaire! for five pax luxury room. Limited time only! Free lunch breakfast and dinner";
         $reward->description = $faker->paragraph(30);
         $reward->instructions = $faker->paragraph(10);
         $reward->cost = $faker->numberBetween(2000, 20000);

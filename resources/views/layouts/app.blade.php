@@ -31,7 +31,7 @@ window.Laravel = <?php echo json_encode([
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/rewards">Redeem Points</a>
+                    <a class="nav-link" href="/reward">Redeem Points</a>
                 </li>
             </ul>
             <form class="form-inline pull-xs-right">

@@ -14,4 +14,10 @@ class RewardController extends Controller
         $rewards = Reward::all();
         return view('rewards.index', compact('rewards'));
     }
+
+    public function show($id)
+    {
+        $reward = Reward::findOrFail($id);
+        return view('rewards.show', compact('reward'));
+    }
 }

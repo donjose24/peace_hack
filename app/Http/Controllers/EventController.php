@@ -24,13 +24,13 @@ class EventController extends Controller
     {
         $event = Event::findOrFail($id);
         $users = $event->users()->get();
+        $currentRegistered = $event->users()->count();
         if (Auth::check()) {
             $user = Auth::user();
             $isRegistered = $event->users()->where('user_id', $user->id)->count();
-            return view('events.show', compact('event', 'users', 'isRegistered'));
+            return view('events.show', compact('event', 'users', 'isRegistered', 'currentRegistered'));
         }
-        return view('events.show', compact('event', 'users'));
-
+        return view('events.show', compact('event', 'users', 'currentRegistered'));
     }
 
     public function delete(Request $request)
