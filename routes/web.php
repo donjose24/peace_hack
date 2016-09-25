@@ -23,3 +23,4 @@ Route::post('/reward', 'RewardController@claim');
 
 Route::post('/event', 'EventController@subscribeUser');
 Route::delete('/event', 'EventController@delete');
+Route::get('/profile', 'UserController@profile');
