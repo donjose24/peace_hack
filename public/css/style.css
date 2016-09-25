@@ -76,6 +76,10 @@ a:hover {
     color: #b71c1c;
 }
 
+.login .logo-v {
+    max-width: 150px;
+}
+
 .bg-faded {
     background-color: #fff;
 }

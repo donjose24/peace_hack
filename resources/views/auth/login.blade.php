@@ -6,7 +6,7 @@
             <div class="col-lg-6 offset-lg-3">
                 <div class="card card-wrapper">
                     <div class="card-block">
-                        <img class="logo" src="http://placehold.it/150x150" alt="Logo">
+                        <img class="logo-v" src="/images/logo-v.png" alt="Logo">
                         <h4 class="card-title">Register an Account</h4>
                         <a href="/redirect" class="btn btn-primary"><i class="fa fa-facebook"></i> Register Using Facebook</a>
                     </div>
