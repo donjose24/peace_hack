@@ -7,7 +7,10 @@ use App\Http\Requests;
 use App\Event;
 use Auth;
 use Mail;
+<<<<<<< HEAD
 use App\User;
+=======
+>>>>>>> d2937c566eaa8da09a4227ab06eb9ee18f90bba3
 
 class EventController extends Controller
 {
@@ -20,8 +23,13 @@ class EventController extends Controller
         $event->users()->attach($userId);
 
         $user = User::find($userId);
+<<<<<<< HEAD
         Mail::send('emails.confirm', ['user' => $user, 'event' => $event], function ($message) use ($user, $event) {
             $message->to($user->email, $user->name)->subject("Thanks for confirming to the event $event->title");
+=======
+        Mail::send('emails.confirm', ['user' => $user, 'event' => $event], function ($message) {
+            $message->to($user->email, $user->name)->subject('This is a demo!');
+>>>>>>> d2937c566eaa8da09a4227ab06eb9ee18f90bba3
         });
 
         return view('events.confirmation', compact('event'));

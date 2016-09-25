@@ -1,6 +1,7 @@
 @extends('emails.layout')
 
 @section('content')
+<<<<<<< HEAD
     Hi {{$user->name}}!
     <br>
     <br>
@@ -14,4 +15,7 @@
     Lovelots,<br>
     Volteer Team
 
+=======
+    Thanks for blablabla
+>>>>>>> d2937c566eaa8da09a4227ab06eb9ee18f90bba3
 @endsection
