@@ -79,9 +79,11 @@
                                         <div class="media-body">
                                             <h4 class="media-heading">{{$user->name}}</h4>
                                             <p>
-                                                Software Engineer
-                                                @if ($user->id == Auth::user()->id)
-                                                    (You)
+                                                @if(Auth::check())
+                                                    Software Engineer
+                                                    @if ($user->id == Auth::user()->id)
+                                                        (You)
+                                                    @endif
                                                 @endif
                                             </p>
 
