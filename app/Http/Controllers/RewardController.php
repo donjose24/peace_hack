@@ -35,6 +35,6 @@ class RewardController extends Controller
 
         $user->rewards()->attach($rewardId);
 
-        return redirect('rewards.confirmation');
+        return view('rewards.confirmation');
     }
 }
