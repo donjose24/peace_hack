@@ -5,7 +5,7 @@
         <div class="container login">
             <div class="col-lg-6 offset-lg-3">
                 <div class="card card-wrapper">
-                    <div class="card-block">
+                    <div class="card-block" style="text-align: center">
                         <img class="logo-v" src="/images/logo-v.png" alt="Logo">
                         <h4 class="card-title">Register an Account</h4>
                         <a href="/redirect" class="btn btn-primary"><i class="fa fa-facebook"></i> Register Using Facebook</a>

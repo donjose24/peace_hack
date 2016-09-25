@@ -78,6 +78,7 @@ a:hover {
 
 .login .logo-v {
     max-width: 150px;
+    float: left;
 }
 
 .bg-faded {
