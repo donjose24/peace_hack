@@ -95,14 +95,6 @@ a:hover {
 .headline {
     text-align: center;
 }
-.landing {
-    height: 500px;
-    text-align: center;
-    background: url('../img/bg.jpg');
-    color: #fff;
-    position: relative;
-    
-}
 
 .landing-content {
     position: relative;

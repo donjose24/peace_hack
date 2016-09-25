@@ -1,10 +1,22 @@
 @extends('layouts.app')
 
+@section('head')
+    <style>
+        .landing {
+            height: 500px;
+            text-align: center;
+            background: url('/images/bg.jpg');
+            color: #fff;
+            position: relative;
+            
+        }
+    </style>
+@endsection
 @section('content')
     <div class="container-fluid landing">
         <div class="overlay"></div>
         <div class="landing-content">
-            <img class="logo-landing" src="img/logo.png" alt="">
+            <img class="logo-landing" src="/images/logo.png" alt="">
             <h1>Change Lives. Earn Points. Claim Rewards</h1> 
             <a href="#" class="btn btn-eer btn-lg learn-more">Learn More</a>
         </div>
