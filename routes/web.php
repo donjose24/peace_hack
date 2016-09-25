@@ -19,6 +19,7 @@ Route::get('/event/{id}', 'EventController@show');
 Route::get('/login', 'Auth\LoginController@login');
 Route::get('/reward', 'RewardController@index');
 Route::get('/reward/{id}', 'RewardController@show');
+Route::post('/reward', 'RewardController@claim');
 
 Route::post('/event', 'EventController@subscribeUser');
 Route::delete('/event', 'EventController@delete');
