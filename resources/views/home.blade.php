@@ -73,14 +73,14 @@
           $('.learn-more').on('click', function(){
              $('html, body').animate({
                  scrollTop: $('.about').offset().top
-             }, 1000);
+             }, 1000, 'easeInOutQuint');
              $(this).css('color', 'white');
           });
 
           $('.view-programs').on('click', function(){
              $('html, body').animate({
                  scrollTop: $('.home').offset().top
-             }, 1000);
+             }, 1000, 'easeInOutQuint');
              $(this).css('color', 'white');
           });
       </script>
