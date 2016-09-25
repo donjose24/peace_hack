@@ -1,5 +1,15 @@
 @extends('emails.layout')
 
 @section('content')
-    Thanks for blablabla
+    Hi! {{$user->name}}
+    <br>
+    <br>
+
+    Thanks for confirming to the event "{{$event->title}}". Your attendance will surely be appreciatted.
+    Use this email as a ticket to the volunteering event.
+
+    <br>
+    Thanks,<br>
+    Volteer Team
+
 @endsection

@@ -21,7 +21,7 @@ class EventController extends Controller
 
         $user = User::find($userId);
         Mail::send('emails.confirm', ['user' => $user, 'event' => $event], function ($message) use ($user, $event) {
-            $message->to($user->email, $user->name)->subject('This is a demo!');
+            $message->to($user->email, $user->name)->subject("Thanks for confirming to the event $event->title");
         });
 
         return view('events.confirmation', compact('event'));
