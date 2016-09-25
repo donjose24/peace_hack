@@ -22,7 +22,7 @@
         <div class="landing-content">
             <img class="logo-landing" src="/images/logo.png" alt="">
             <h1>Change Lives. Earn Points. Claim Rewards</h1> 
-            <a href="#" class="btn btn-volt btn-lg learn-more">Learn More</a>
+            <a href="#" class="btn btn-volt btn-lg learn-more"><strong>Learn More</strong></a>
         </div>
     </div>
     <div class="container-fluid about">
