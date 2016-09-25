@@ -78,7 +78,7 @@
              $('html, body').animate({
                  scrollTop: $('.about').offset().top
              }, 1000, 'easeInOutQuint');
-             $(this).css('color', 'white');
+             $(this).css('color', '#d32f2f');
           });
 
           $('.view-programs').on('click', function(){
