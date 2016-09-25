@@ -167,6 +167,12 @@ a:hover {
     padding-right: 1.35rem;
 }
 
+.logo-v {
+    max-width: 256px;
+    float: left;
+    padding-right: 1.35rem;
+}
+
 .login .card-title {
     margin-top: 5%;
 }
