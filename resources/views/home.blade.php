@@ -10,6 +10,10 @@
             position: relative;
             
         }
+
+        .learn-more {
+            padding: 1rem 5rem;
+        }
     </style>
 @endsection
 @section('content')
