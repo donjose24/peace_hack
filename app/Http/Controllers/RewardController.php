@@ -20,4 +20,10 @@ class RewardController extends Controller
         $reward = Reward::findOrFail($id);
         return view('rewards.show', compact('reward'));
     }
+
+    public function claim(Request $request)
+    {
+        $userId = $request->get('userId');
+        $rewardId = $request->get('rewardId');
+    }
 }
