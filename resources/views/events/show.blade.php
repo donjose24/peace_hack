@@ -22,7 +22,7 @@
 @endsection
 
 @section('content')
-    <div class="container details">
+    <div class="container details" style="margin-top: 10%;">
         <br>
         <div class="col-lg-12 hero">
             <div class="overlay"></div>

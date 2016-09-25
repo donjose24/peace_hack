@@ -3,7 +3,7 @@
 @section('head')
     <style>
         .rewards {
-            margin-top: 15%;
+            margin-top: 10%;
         }
     </style>
 @endsection

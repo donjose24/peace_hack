@@ -15,7 +15,7 @@
     </style>
 @endsection
 @section('content')
-    <div class="container cancel-confirmation">
+    <div class="container cancel-confirmation" style="margin-top: 10%;">
         <br>
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
