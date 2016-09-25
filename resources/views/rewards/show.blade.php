@@ -3,7 +3,7 @@
 @section('head')
     <style>
         .hero {
-            background: url('/images/{{$event->picture}}');
+            background: url('/images/{{$reward->picture}}');
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
