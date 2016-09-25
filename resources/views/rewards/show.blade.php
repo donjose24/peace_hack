@@ -68,32 +68,32 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-block">
-                            <h5 class="card-title">Users Claimed</h5>
-                            <br>
-                            <br>
-                            @foreach($users as $user)
-                                <div class="media">
-                                    <a class="media-left" href="#">
-                                        <img class="media-object" src="{{$user->avatar_url}}" alt="Generic placeholder image">
-                                    </a>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">{{$user->name}}</h4>
-                                        <p>
-                                        @if(Auth::check())
-                                            Software Engineer
-                                            @if ($user->id == Auth::user()->id)
-                                                (You)
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-block">
+                                <h5 class="card-title">Users Claimed</h5>
+                                <br>
+                                <br>
+                                @foreach($users as $user)
+                                    <div class="media">
+                                        <a class="media-left" href="#">
+                                            <img class="media-object" src="{{$user->avatar_url}}" alt="Generic placeholder image">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">{{$user->name}}</h4>
+                                            <p>
+                                            @if(Auth::check())
+                                                Software Engineer
+                                                @if ($user->id == Auth::user()->id)
+                                                    (You)
+                                                @endif
                                             @endif
-                                        @endif
-                                        </p>
-                                    </div>                                   
-                                </div>
-                            @endforeach
+                                            </p>
+                                        </div>                                   
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
                 </div>
