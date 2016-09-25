@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Event;
 use Auth;
 use Mail;
+use App\User;
 
 class EventController extends Controller
 {
