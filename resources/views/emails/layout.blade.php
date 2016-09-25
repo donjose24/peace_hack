@@ -67,8 +67,7 @@
             border: 1px solid transparent;
             padding: .5rem 1rem;
             font-size: 1rem;
-            border-radius: .25rem;
-            text-decoration: none"
+            border-radius: .25rem;"
                     >Go to site</a>
                 </li>
             </ul>
