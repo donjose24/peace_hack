@@ -37,7 +37,7 @@
                         <div class="col-lg-6">
                             <a href="#" class="btn btn-primary btn-fb float-left"><i class="fa fa-facebook"></i> Share in Facebook</a>
                             <div class="fb-share-button" 
-                                 data-href="http://www.creativejose.com" 
+                                 data-href="https://volteer.herokuapp.com/event/{{$event->id}}" 
                                  data-layout="button_count">
                             </div>
                         </div>
