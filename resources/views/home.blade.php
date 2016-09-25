@@ -32,8 +32,8 @@
                 <br>
                 <h5>With volunteering comes understanding and with understanding comes peace.
                     Volteer is a gateway for organizations to create their own volunteering programs
-                    and connect them with the people who are willing to help. In exchange for
-                    your effort, you will get <strong>"volts"</strong> which you can use to exchange for rewards.
+                    and connect them with the people who are willing to extend their helping hand. In exchange for
+                    their effort, they will get <strong>"volts"</strong> which they can use to exchange for rewards.
                 </h5>
                 <br>
                 <a href="#" class="btn btn-eer btn-lg view-programs">View Available Volunteering Programs</a>
@@ -45,7 +45,7 @@
         <div class="row headline">
              <h1 class="eer headline">Available Volunteering Programs</h1>
              <h5>The volunteering programs come from different world organizations.
-                 Start joining and earn your <strong>"volts"</strong> today!
+                 Start joining, earn your <strong>"volts"</strong>, and claim your freebies today!
              </h5>
          </div>
          <br>
