@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Reward;
 use App\User;
+use Mail;
 
 class RewardController extends Controller
 {
