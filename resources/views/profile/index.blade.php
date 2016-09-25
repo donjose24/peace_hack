@@ -36,7 +36,6 @@
                             {{$event->short_description}}
                             </p>
                             <a href="/event/{{$event->id}}" class="btn btn-primary btn-block">View Full Details</a>
-                            <a href="#" class="btn btn-outline-danger btn-block" data-toggle="modal" data-target="#myModal">Cancel Attendance</a>
                         </div>
                     </div>
                 </div>
