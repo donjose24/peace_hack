@@ -12,7 +12,7 @@
     <br>
     <br>
     <br>
-        {{$reward->instrution}} 
+        {{$reward->instructions}} 
     <br>
     <br>
     <br>
