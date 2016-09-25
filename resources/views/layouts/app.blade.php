@@ -74,7 +74,7 @@ window.Laravel = <?php echo json_encode([
                 @else
                     <ul class="nav navbar-nav">
                         <li class="nav-item active">
-                            <a href="/login" class="btn btn-lg btn-volt login light" role="button">Login</a>
+                            <a href="/login" class="btn btn-lg btn-volt login light" role="button">Login/Register</a>
                         </li>
                     </ul>
                 @endif
