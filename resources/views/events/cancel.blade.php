@@ -1,5 +1,19 @@
 @extends('layouts.app')
 
+@section('head')
+    <style>
+        .hero {
+            background: url('/images/{{$event->picture}}');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            padding: 8rem;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+@endsection
 @section('content')
     <div class="container cancel-confirmation">
         <br>

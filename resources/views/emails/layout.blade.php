@@ -48,7 +48,7 @@
                 <img src="https://volteer.herokuapp.com/images/logo-email.png" alt="Volteer">
             </a>
             <ul class="nav navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item active" style="list-style: none">
                     <a class="nav-link btn btn-eer btn-lg" href="https://volteer.herokuapp.com/"
                         style=" background: #d32f2f;
             color: #fff; padding: .75rem 1.5rem;
@@ -67,7 +67,8 @@
             border: 1px solid transparent;
             padding: .5rem 1rem;
             font-size: 1rem;
-            border-radius: .25rem;"
+            border-radius: .25rem;
+            text-decoration: none"
                     >Go to site</a>
                 </li>
             </ul>
