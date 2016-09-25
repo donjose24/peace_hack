@@ -27,6 +27,7 @@
 
             .navbar {
                 z-index: 2000;
+                box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
             }
         </style>
         <!-- CSRF Token -->
