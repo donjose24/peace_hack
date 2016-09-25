@@ -19,7 +19,7 @@ class RewardController extends Controller
     public function show($id)
     {
         $reward = Reward::findOrFail($id);
-        $users = $rewards->users()->get();
+        $users = $reward->users()->get();
         return view('rewards.show', compact('reward', 'users'));
     }
 
