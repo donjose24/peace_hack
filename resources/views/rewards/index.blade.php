@@ -23,21 +23,4 @@
             @endforeach
         </div>
     </div>
-    @section('script')
-        <script>
-          $('.learn-more').on('click', function(){
-             $('html, body').animate({
-                 scrollTop: $('.about').offset().top
-             }, 1000);
-             $(this).css('color', 'white');
-          });
-
-          $('.view-programs').on('click', function(){
-             $('html, body').animate({
-                 scrollTop: $('.home').offset().top
-             }, 1000);
-             $(this).css('color', 'white');
-          });
-      </script>
-    @endsection
 @endsection
