@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12">
                 <div class="card">
-                    @foreach($event as $event)
+                    @foreach($events as $event)
                         <div class="volt-points"> <i class="fa fa-bolt"></i> {{$event->points}}  VOLT Points</div>
                         <img class="card-img-top" src="/images/{{$event->picture}}" alt="Card image cap">
                         <div class="card-block ">
