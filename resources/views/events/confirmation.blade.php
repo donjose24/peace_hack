@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('head')
-    <meta property="og:url"           content="http://localhost:8000/" />
+    <meta property="og:url"           content="http://volteer.herokuapp.com/event/{{$event->id}}" />
     <meta property="og:type"          content="Volteer" />
     <meta property="og:title"         content="{{$event->title}}" />
     <meta property="og:description"   content="{{$event->short_description}}" />
-    <meta property="og:image"         content="http://localhost:8000/images/{{$event->picture}}" />
+    <meta property="og:image"         content="http://volteer.herokuapp.com/images/{{$event->picture}}" />
 @endsection
 
 @section('content')
