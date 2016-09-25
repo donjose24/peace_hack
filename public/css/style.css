@@ -153,7 +153,7 @@ a:hover {
 }
 
 .hero {
-    background: url('../img/volunteer.jpg');
+    background: url('images/volunteer.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
