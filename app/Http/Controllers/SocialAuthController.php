@@ -30,6 +30,7 @@ class SocialAuthController extends Controller
             $user->avatar_url = $response->avatar;
             $user->password = bcrypt('test'); //haha dont do this. for hacking pruposes lang~
             $user->address = 'Valenzuela City'; //this too
+            $user->points = 100000;
 
             $user->save();
         } else {
