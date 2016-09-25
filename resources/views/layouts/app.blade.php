@@ -44,8 +44,9 @@ window.Laravel = <?php echo json_encode([
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="avatar-container">
-                                    <img src="{{Auth::user()->avatar_url}}" alt=""> {{Auth::user()->name}}
+                                    <img src="{{Auth::user()->avatar_url}}" alt=""> 
                                 </span>
+                                {{Auth::user()->name}}
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="/profile"> <i class="fa fa-user"></i> My Profile</a>

@@ -61,6 +61,18 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-block">
+                                <h5 class="card-title"> Organizer Details </h5>
+                                <p class="date"><strong>Organizer:</strong> {!!$event->organizing_body!!}</p>
+                                <p class="date"><strong>Email:</strong> {!!$event->organizing_body_email!!}</p>
+                                <p class="date"><strong>Contact Number:</strong> {!!$event->organizing_body_contact!!}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-block">
                                 <h5 class="card-title">Join the cause</h5>
                                 @if (Auth::check())
                                     @if($isRegistered == 0)
@@ -111,18 +123,6 @@
                                         </div>                                   
                                     </div>
                                 @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-block">
-                                <h5 class="card-title"> Organizer Details </h5>
-                                <p class="date"><strong>Organizer:</strong> {!!$event->organizing_body!!}</p>
-                                <p class="date"><strong>Email:</strong> {!!$event->organizing_body_email!!}</p>
-                                <p class="date"><strong>Contact Number:</strong> {!!$event->organizing_body_contact!!}</p>
                             </div>
                         </div>
                     </div>
