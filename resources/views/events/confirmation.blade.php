@@ -36,7 +36,7 @@
     <div class="container confirmation">
         <br>
         <div class="row">
-            <div class="col-lg-8 offset-lg-2">
+            <div class="col-lg-12">
                 <div class="card">
                     <div class="card-block">
                         <h5 class="card-title">Registration Successful!</h5>
