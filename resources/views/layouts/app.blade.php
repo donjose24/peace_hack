@@ -20,6 +20,10 @@
                 border-radius: 100px;
                 marin-right .5rem;
             }
+
+            .dropdown {
+                margin-top: .5rem;
+            }
         </style>
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
