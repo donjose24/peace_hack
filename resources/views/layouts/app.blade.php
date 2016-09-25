@@ -85,5 +85,6 @@ window.Laravel = <?php echo json_encode([
         <script src="https://use.fontawesome.com/30b1b5bdff.js"></script>
         <script src="/js/jquery.dotdotdot.min.js"></script>
         <script src="/js/app.js"></script>
+        @yield('script')
     </body>
 </html>
