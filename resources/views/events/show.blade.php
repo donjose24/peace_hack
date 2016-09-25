@@ -8,17 +8,17 @@
     <meta property="og:image" content="http://volteer.herokuapp.com/images/{{$event->picture}}" />
 
     <style>
-    .hero {
-        background: url('images/{{$event->picture}}');
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-        padding: 8rem;
-        text-align: center;
-        color: #fff;
-        position: relative;
-    }
-</style>
+        .hero {
+            background: url('/images/{{$event->picture}}');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            padding: 8rem;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+    </style>
 @endsection
 
 @section('content')
