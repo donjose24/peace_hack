@@ -26,7 +26,9 @@ window.Laravel = <?php echo json_encode([
     </head>
     <body>
         <nav class="navbar navbar-light bg-faded">
-            <a class="navbar-brand" href="/">Volteer</a>
+            <a class="navbar-brand" href="#">
+                <img src="/images/volteer.svg" alt="Volteer">
+            </a>
             <ul class="nav navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home</a>
