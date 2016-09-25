@@ -19,7 +19,6 @@
     <div class="container-fluid">
         <br>
         <div class="col-lg-12 hero redeem-bg">
-            <div class="overlay"></div>
             <div class="event-title">
                 <h1>{{ $reward->title }}</h1>
             </div>
