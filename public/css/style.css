@@ -27,6 +27,14 @@ a:hover {
     font-weight: 700;
 }
 
+.eer {
+    color: #d32f2f;
+}
+
+.volt {
+    color: #ffeb3b;
+}
+
 .btn-eer {
     background: #d32f2f;
     color: #fff;
@@ -43,6 +51,10 @@ a:hover {
 
 .btn-volt:hover {
     background: #FDD835;
+}
+
+.btn :active:focus {
+    color: #fff !important;
 }
 
 .navbar-brand {
@@ -76,13 +88,39 @@ a:hover {
     color: #b71c1c;
 }
 
-.login .logo-v {
-    max-width: 150px;
-    float: left;
-}
-
 .bg-faded {
     background-color: #fff;
+}
+
+.headline {
+    text-align: center;
+}
+.landing {
+    height: 500px;
+    text-align: center;
+    background: url('../img/bg.jpg');
+    color: #fff;
+    position: relative;
+    
+}
+
+.landing-content {
+    position: relative;
+    z-index: 1100;
+}
+
+.landing-content img {
+    margin-top: 10%;
+}
+
+.landing .logo-landing {
+    max-width: 256px;
+}
+
+.about {
+    text-align: center;
+    padding: 5rem;
+    background: #f8f8f8;
 }
 
 .home .date-time {
@@ -157,6 +195,17 @@ a:hover {
     margin-bottom: 0.3rem;
 }
 
+.hero {
+    background: url('../img/volunteer.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 8rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
 .redeem-bg {
     background: url('../img/bg.jpg');
     background-size: cover;
@@ -164,7 +213,7 @@ a:hover {
     background-attachment: fixed;
 }
 
-.hero .overlay {
+.overlay {
     background: rgba(0,0,0,0.65);
     position: absolute;
     top: 0;
