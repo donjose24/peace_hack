@@ -152,17 +152,6 @@ a:hover {
     margin-bottom: 0.3rem;
 }
 
-.hero {
-    background: url('images/volunteer.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 8rem;
-    text-align: center;
-    color: #fff;
-    position: relative;
-}
-
 .redeem-bg {
     background: url('../img/bg.jpg');
     background-size: cover;
