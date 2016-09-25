@@ -1,7 +1,7 @@
 @extends('emails.layout')
 
 @section('content')
-    Hi! {{$user->name}}
+    Hi {{$user->name}}!
     <br>
     <br>
 
@@ -9,7 +9,9 @@
     Use this email as a ticket to the volunteering event.
 
     <br>
-    Thanks,<br>
+    <br>
+    <br>
+    Lovelots,<br>
     Volteer Team
 
 @endsection

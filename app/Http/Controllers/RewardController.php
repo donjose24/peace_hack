@@ -36,6 +36,9 @@ class RewardController extends Controller
 
         $user->rewards()->attach($rewardId);
 
+        Mail::send('emails.reward', ['user' => $user, 'reward' => $reward], function ($message) use ($user, $reward) {
+            $message->to($user->email, $user->name)->subject("You have redeemed \"$reward->title\"");
+        });
         return view('rewards.confirmation', compact('reward'));
     }
 }
