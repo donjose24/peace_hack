@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('head')
-    <meta property="og:url"           content="http://volteer.herokuapp.com/event/{{$event->id}}" />
-    <meta property="og:type"          content="Volteer" />
-    <meta property="og:title"         content="{{$event->title}}" />
-    <meta property="og:description"   content="{{$event->short_description}}" />
-    <meta property="og:image"         content="http://volteer.herokuapp.com/images/{{$event->picture}}" />
+    <meta property="og:url" content="http://volteer.herokuapp.com/event/{{$event->id}}" />
+    <meta property="og:type" content="Volteer" />
+    <meta property="og:title" content="{{$event->title}}" />
+    <meta property="og:description" content="{{$event->short_description}}" />
+    <meta property="og:image" content="http://volteer.herokuapp.com/images/{{$event->picture}}" />
 @endsection
 
 @section('content')
@@ -35,10 +35,9 @@
                         </div>
                         <div id="fb-root"></div>
                         <div class="col-lg-6">
-                            <a href="#" class="btn btn-primary btn-fb float-left"><i class="fa fa-facebook"></i> Share in Facebook</a>
                             <div class="fb-share-button" 
                                  data-href="https://volteer.herokuapp.com/event/{{$event->id}}" 
-                                 data-layout="button_count">
+                                 >
                             </div>
                         </div>
                     </div>
