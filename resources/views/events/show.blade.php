@@ -137,7 +137,6 @@
                                                     @endif
                                                 @endif
                                             </p>
-
                                         </div>                                   
                                     </div>
                                 @endforeach

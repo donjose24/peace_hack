@@ -38,7 +38,7 @@
                                 @if (Auth::check())
                                     <h6>Your Points:{{Auth::user()->points}}</h6>
                                     <h6>Points Required:{{$reward->cost}}</h6>
-                                    {{Form::open(['url' => 'event', 'method' => 'POST'])}}
+                                    {{Form::open(['url' => 'reward', 'method' => 'POST'])}}
                                         {{Form::hidden('userId', Auth::user()->id)}}
                                         {{Form::hidden('rewardId', $reward->id)}}
                                         @if (Auth::user()->points < $reward->cost)

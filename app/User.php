@@ -31,4 +31,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Event', 'users_events');
     }
+
+    public function rewards()
+    {
+        return $this->belongsToMany('App\Reward');
+    }
 }

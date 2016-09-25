@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Reward;
+use App\User;
 
 class RewardController extends Controller
 {
@@ -25,5 +26,15 @@ class RewardController extends Controller
     {
         $userId = $request->get('userId');
         $rewardId = $request->get('rewardId');
+
+        $user = User::findOrFail($userId);
+        $reward = Reward::findOrFail($rewardId);
+
+        $user->points = $user->points - $reward->cost;
+        $user->save();
+
+        $user->rewards()->attach($rewardId);
+
+        return redirect('rewards.confirmation');
     }
 }
