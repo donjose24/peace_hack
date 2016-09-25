@@ -16,7 +16,7 @@
 
 @endsection
 @section('content')
-    <div class="container-fluid">
+    <div class="container">
         <br>
         <div class="col-lg-12 hero redeem-bg">
             <div class="event-title">
