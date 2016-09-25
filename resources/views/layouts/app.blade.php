@@ -13,11 +13,19 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
 
+        <style>
+            .avatar-container img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                marin-right .5rem;
+            }
+        </style>
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
-
+        
         <!-- Scripts -->
         <script>
 window.Laravel = <?php echo json_encode([

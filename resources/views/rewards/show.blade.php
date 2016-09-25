@@ -2,16 +2,16 @@
 
 @section('head')
     <style>
-.hero {
-    background: url('/images/{{$reward->picture}}');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    padding: 8rem;
-    text-align: center;
-    color: #fff;
-    position: relative;
-}
+        .hero {
+            background: url('/images/{{$reward->picture}}');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            padding: 8rem;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
     </style>
 
 @endsection
