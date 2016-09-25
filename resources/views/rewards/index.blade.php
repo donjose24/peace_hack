@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+@section('head')
+    <style>
+        .rewards {
+            margin-top: 15%;
+        }
+    </style>
+@endsection
 @section('content')
     <div class="container rewards">
          <br>
