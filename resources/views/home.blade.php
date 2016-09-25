@@ -7,8 +7,10 @@
             @foreach($events as $event)
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <div class="card">
-                        <div class="volt-points"> <i class="fa fa-bolt"></i> {{$event->points}}</div>
-                        <img class="card-img-top" src="/images/{{$event->picture}}" alt="Card image cap">
+                        <div class="volt-container">
+                            <div class="volt-points"> <i class="fa fa-bolt"></i> {{$event->points}}</div>
+                            <img class="card-img-top" src="/images/{{$event->picture}}" alt="Card image cap">
+                        </div>
                         <div class="card-block">
                             <h4 class="card-title dot-ellipsis">{{$event->title}}</h4>
                             <h6 class="date-time"> <i class="fa fa-hourglass-start"></i> {!!date('F d, Y | h:m A', strtotime($event->start_date))!!}</h6>

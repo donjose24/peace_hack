@@ -1,13 +1,14 @@
-p{
-    text-align: justify;
-}
-
 body {
-    background: #f8f8fa;
+   /* background: #f8f8fa;*/
+   background: #FFF176;
+    font-family: "Titillium Web", "Titillium", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+a:hover {
+    text-decoration: none;
 }
 
-.bg-faded {
-    background-color: #fff;
+.btn {
+    transition: 0.3s all ease;
 }
 
 .float-right {
@@ -18,18 +19,92 @@ body {
     float: left;
 }
 
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.btn-eer {
+    background: #d32f2f;
+    color: #fff;
+}
+
+.btn-eer:hover {
+    background: #b71c1c;
+    color: #fff;
+}
+
+.btn-volt {
+    background: #ffeb3b;
+}
+
+.btn-volt:hover {
+    background: #FDD835;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}   
+
+.nav-link {
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin-top: 3px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .active>.nav-link:focus, .navbar-light .navbar-nav .active>.nav-link:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .open>.nav-link, .navbar-light .navbar-nav .open>.nav-link:focus, .navbar-light .navbar-nav .open>.nav-link:hover {
+    color: #D32F2F;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #D32F2F;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #b71c1c;
+}
+
+.login {
+    margin-top: 3px;
+    font-weight: 700;
+    color: #b71c1c;
+}
+
+.bg-faded {
+    background-color: #fff;
+}
+
 .home .date-time {
     color: #9E9E9E;
 }
 
-.home .volt-points {
-    padding: 1rem;
-    background: #FFEE58;
+.volt-container {
+    position: relative;
+}
+.volt-points {
+    padding: 0.5rem;
+    background: #ffeb3b;
+    color: #D32F2F;
+    font-weight: 700;
+    position: absolute;
+    right:0;
+    bottom:0;
+}
+
+.card {
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+  transition: 0.3s all ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .home .card-img-top {
     max-width: 348px;
-    border-radius: 0;
 }
 
 .home .card-title {
@@ -75,7 +150,7 @@ body {
 }
 
 .hero {
-    background: url('/images/volunteer.jpg');
+    background: url('../img/volunteer.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -86,7 +161,7 @@ body {
 }
 
 .redeem-bg {
-    background: url('/images/bg.jpg');
+    background: url('../img/bg.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -120,7 +195,7 @@ body {
     text-decoration: none;
 }
 .profile-link a:hover {
-    text-decoration: none;
+     text-decoration: none;
 }
 
 #dropdownMenuButton  {
