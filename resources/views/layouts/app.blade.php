@@ -8,6 +8,7 @@
 
         <meta charset="UTF-8">
         <title>Volteer</title>
+        <link rel='shortcut icon' href='/images/favicon.png' type='image/x-icon'/ >
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
