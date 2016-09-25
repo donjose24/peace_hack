@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Event;
 use Auth;
+use Mail;
 
 class EventController extends Controller
 {
@@ -16,6 +17,11 @@ class EventController extends Controller
 
         $event = Event::findOrFail($eventId);
         $event->users()->attach($userId);
+
+        $user = User::find($userId);
+        Mail::send('emails.confirm', ['user' => $user, 'event' => $event], function ($message) {
+            $message->to($user->email, $user->name)->subject('This is a demo!');
+        });
 
         return view('events.confirmation', compact('event'));
     }
