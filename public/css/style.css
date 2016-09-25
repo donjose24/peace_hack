@@ -45,6 +45,9 @@ a:hover {
     background: #FDD835;
 }
 
+.navbar-brand {
+    margin-top: 3px;
+}
 .navbar-brand img {
     max-height: 50px;
 }   
