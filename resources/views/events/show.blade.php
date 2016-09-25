@@ -42,6 +42,24 @@
                         <p class="card-text">
                         {{$event->description}}
                         </p>
+                        @if (Auth::check())
+                            @if($isRegistered == 0)
+                                {{Form::open(['url' => 'event', 'method' => 'POST'])}}
+                                {{Form::hidden('userId', Auth::user()->id)}}
+                                {{Form::hidden('eventId', $event->id)}}
+                                {{Form::submit('Register', ['class' => 'btn btn-success btn-lg btn-block'])}}
+                                {{Form::close()}}
+                            @else 
+                                {{Form::open(['url' => 'event', 'method' => 'DELETE'])}}
+                                {{Form::hidden('userId', Auth::user()->id)}}
+                                {{Form::hidden('eventId', $event->id)}}
+                                {{Form::hidden('_method', 'DELETE')}}
+                                {{Form::submit('Cancel', ['class' => 'btn btn-danger btn-lg btn-block'])}}
+                                {{Form::close()}}                                   
+                            @endif
+                        @else
+                            <h6>You must <a href="/login">login</a> to continue</h6>
+                        @endif
                     </div>
                 </div>
             </div>
