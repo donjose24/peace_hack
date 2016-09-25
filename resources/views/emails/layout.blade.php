@@ -8,7 +8,7 @@
         <title>Volteer</title>
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-        <link rel="stylesheet" href="http://volteer.herokuapp.com/css/style.css">
+        <link rel="stylesheet" href="https://volteer.herokuapp.com/css/style.css">
 
         <style>
             .avatar-container img {
@@ -31,7 +31,7 @@
             </a>
             <ul class="nav navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="https://volteer.herokuapp.com/i">Go to site</a>
+                    <a class="nav-link" href="https://volteer.herokuapp.com/">Go to site</a>
                 </li>
             </ul>
             </form>
